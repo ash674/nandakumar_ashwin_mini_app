@@ -15,6 +15,7 @@
 </section>
 <main id="app">
     <h2>Models</h2>
+    <models v-for = 'item in modelData' :key="item.id" :model="item"></models>
 </main>
 </body>
 <script src="js/main.js" type="module"></script>
