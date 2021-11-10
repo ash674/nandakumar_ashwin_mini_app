@@ -1,0 +1,29 @@
+.headSection {
+  display: flex;
+  flex-direction: row;
+  margin: -19px;
+  justify-content: center;
+  -webkit-box-shadow: 0px 10px 12px -6px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 10px 12px -6px rgba(0, 0, 0, 0.35);
+}
+.headSection .fakeNav a {
+  text-decoration: none;
+  font-family: "Code", "Arial", "Helvetica", sans-serif;
+  font-weight: bold;
+  margin-right: 30px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #231f20;
+}
+.headSection .fakeNav {
+  display: flex;
+  margin-top: 69px;
+}
+.headSection .Logo {
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: 29px;
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */
