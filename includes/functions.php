@@ -3,12 +3,12 @@
 $result = array();
 
 
-function getMiniData($conn, $prof) {
-        if(is_null($prof)){
+function getMiniData($conn, $min) {
+        if(is_null($min)){
             $query = "SELECT * FROM mini_cooper";
          }
          else {
-            $query = "SELECT * FROM mini_cooper WHERE mini_id='".$prof."'";
+            $query = "SELECT * FROM mini_cooper WHERE mini_id='".$min."'";
            }
         // this is the database result -> the raw data that SQL gives us
         $runQuery = $conn->query($query);    
