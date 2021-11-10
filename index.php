@@ -10,9 +10,11 @@
 </head>
 <?php include 'header.php' ?>
 <body>
-
+<section class="main_image">
+    <img src="images/main_page_image.jpg" alt="main_image">
+</section>
 <main id="app">
-    
+    <h2>Models</h2>
 </main>
 </body>
 <script src="js/main.js" type="module"></script>

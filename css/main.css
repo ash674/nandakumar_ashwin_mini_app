@@ -1,10 +1,12 @@
 .headSection {
   display: flex;
   flex-direction: row;
-  margin: -19px;
+  margin-top: -19px;
+  margin-right: -8px;
+  margin-left: -8px;
   justify-content: center;
-  -webkit-box-shadow: 0px 10px 12px -6px rgba(0, 0, 0, 0.35);
-  box-shadow: 0px 10px 12px -6px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: inset 0px -6px 12px -6px rgba(35, 31, 32, 0.9);
+  box-shadow: inset 0px -6px 12px -6px rgba(35, 31, 32, 0.9);
 }
 .headSection .fakeNav a {
   text-decoration: none;
@@ -12,18 +14,43 @@
   font-weight: bold;
   margin-right: 30px;
   font-size: 18px;
+  padding: 10px;
   letter-spacing: 1px;
   color: #231f20;
 }
 .headSection .fakeNav {
   display: flex;
-  margin-top: 69px;
+  margin-top: 65px;
 }
 .headSection .Logo {
   margin-right: 100px;
   margin-left: 100px;
   margin-top: 29px;
   margin-bottom: 20px;
+}
+
+.main_image {
+  display: flex;
+  justify-content: center;
+}
+
+#app h2 {
+  font-family: "Code", "Arial", "Helvetica", sans-serif;
+  font-weight: bold;
+  color: #231f20;
+  margin-top: 40px;
+  letter-spacing: 2px;
+  margin-left: 100px;
+}
+
+.fakeNav a:hover {
+  background-color: #ebebeb;
+  color: #1d1a1a;
+  transition: all ease-in 200ms;
+}
+
+#app h2:hover {
+  transition: all ease-in 400ms;
 }
 
 /*# sourceMappingURL=main.css.map */
