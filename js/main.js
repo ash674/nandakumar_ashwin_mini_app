@@ -1,5 +1,6 @@
 import {getData} from './components/TheDataMiner.js';
 import ModelComponent from './components/TheModelComponent.js';
+import LightboxComponent from './components/TheLightboxComponent.js';
 
 (()=>{
 const model = new Vue({
@@ -10,13 +11,29 @@ const model = new Vue({
 
 data: {
     modelData: [],
-    message: "Mini"
+    message: "Mini",
+    isVisible: false,
+    currentMini: {}
 },
 
+methods: {
+    popLightBox(item){
+        this.currentMini = item;
+        this.isVisible = true;
+    },
+
+    
+    closeLightBox(){
+        debugger;
+        this.isVisible = false;
+    }
+
+},
 
 components:
 {
-    models: ModelComponent
+    models: ModelComponent,
+    lightbox: LightboxComponent
 }
 
 }).$mount("#app");

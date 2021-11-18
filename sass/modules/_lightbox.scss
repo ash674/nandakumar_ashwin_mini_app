@@ -1,0 +1,28 @@
+.lightBox {
+    display: none;
+}
+
+.visible {
+    display: block !important;
+}
+
+.lightboxWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: 0 auto;
+    .lightboxContent{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Code', 'Arial', 'Helvetica', sans-serif;
+        color: rgb(51, 32, 32);
+        h1{
+            letter-spacing: 1.2px;
+        }
+        p{
+            font-family: 'Gotham', 'Arial', 'Helvetica', sans-serif;
+            font-weight: 400;
+        }
+
+    }
+}

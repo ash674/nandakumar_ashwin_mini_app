@@ -43,6 +43,49 @@
   margin-left: 100px;
 }
 
+.plsWork {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.models {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.lightBox {
+  display: none;
+}
+
+.visible {
+  display: block !important;
+}
+
+.lightboxWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  margin: 0 auto;
+}
+.lightboxWrapper .lightboxContent {
+  display: flex;
+  flex-direction: column;
+  font-family: "Code", "Arial", "Helvetica", sans-serif;
+  color: #332020;
+}
+.lightboxWrapper .lightboxContent h1 {
+  letter-spacing: 1.2px;
+}
+.lightboxWrapper .lightboxContent p {
+  font-family: "Gotham", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+}
+
 .fakeNav a:hover {
   background-color: #ebebeb;
   color: #1d1a1a;
