@@ -63,11 +63,11 @@
 }
 
 .visible {
-  display: block !important;
+  display: flex !important;
 }
 
 .lightboxWrapper {
-  display: flex;
+  display: none;
   flex-direction: row;
   width: 95%;
   margin: 0 auto;

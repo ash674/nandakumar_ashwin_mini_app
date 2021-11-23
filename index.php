@@ -20,9 +20,7 @@
     <models v-on:showdata = "popLightBox" v-for = 'item in modelData' :key="item.id" :model="item"></models>
     </section>
    
-    <lightbox class="lightbox" v-on:closelb="closeLightBox" :class= '{ visible: isVisible }' :model="currentMini"></lightbox>
-
-  
+    <lightbox class="lightbox" v-on:closelb="closeLightBox" :class='{ visible: isVisible }' :model="currentMini"></lightbox>
 </main>
 </body>
 <script src="js/main.js" type="module"></script>
