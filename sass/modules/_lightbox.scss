@@ -9,20 +9,88 @@
 .lightboxWrapper {
     display: none;
     flex-direction: row;
-    width: 95%;
-    margin: 0 auto;
-    .lightboxContent{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    margin-top: -19px;
+    margin-right: -8px;
+    margin-left: -8px;
+    background: rgba(228,228,228,0.6);
+   
+}
+
+.lightboxContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    width: 1280px;
+    height: 720px;
+    left: 205px;background: rgb(35,31,32);
+    background: linear-gradient(153deg, rgba(35,31,32,1) 31%, rgba(228,228,228,0) 100%);
+    .boxContent{
+        margin-top: -300px;
+        margin-left: 20px;
+        font-family: 'Code', 'Arial', 'Helvetica', sans-serif;
+        color: white;
+    }
+    i{
+        position: absolute;
+        left: 1240px;
+        top: 20px;
+    }
+    h1{
+        letter-spacing: 1.2px;
+        margin-bottom: 20px;
+    }
+    p{
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        margin-bottom: 20px;
+        font-family: 'Gotham', 'Arial', 'Helvetica', sans-serif;
+        font-weight: 400;
+    }
+
+}
+
+.innerContent {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    text-align: left;
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contentCard {
         display: flex;
         flex-direction: column;
-        font-family: 'Code', 'Arial', 'Helvetica', sans-serif;
-        color: rgb(51, 32, 32);
-        h1{
-            letter-spacing: 1.2px;
-        }
-        p{
+        background-color: white;
+        width: 100%;
+        height: 55px;
+        margin: 20px;
+        p{width: 100%;
+            text-align: center;
+            color: #231f20;
             font-family: 'Gotham', 'Arial', 'Helvetica', sans-serif;
-            font-weight: 400;
+            font-weight: 500;
+            font-size: 14px;
         }
-
+        
+        h3{
+            margin-top: 5px;
+            color: #231f20;
+            font-family: 'Code', 'Arial', 'Helvetica', sans-serif;
+            font-weight: 500;
+            margin-left: 10px;
+            font-size: 12px;
+        }
+        
     }
+}
+
+
+.videoBox{
+    margin: 0 auto;
 }

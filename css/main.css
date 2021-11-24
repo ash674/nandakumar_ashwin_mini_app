@@ -39,6 +39,7 @@
   font-weight: bold;
   color: #231f20;
   margin-top: 40px;
+  margin-bottom: 40px;
   letter-spacing: 2px;
   margin-left: 100px;
 }
@@ -50,12 +51,39 @@
   justify-content: center;
 }
 
+.plsWork:hover {
+  cursor: pointer;
+}
+
+.models h3 {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  opacity: 0;
+  font-family: "Integral CF", "Arial", "Helvetica", sans-serif;
+  top: 667px;
+  margin-left: 10px;
+  color: #231f20;
+}
+
+.models:hover h3 {
+  opacity: 1;
+  transition: ease-in-out 100ms;
+}
+.models:hover .models_image img {
+  -webkit-box-shadow: 5px 5px 4px 5px #231f20;
+  box-shadow: 5px 5px 4px 5px #231f20;
+  transform: scale(1.03);
+  transition: ease-in-out 300ms;
+}
+
 .models {
   display: flex;
   flex-direction: column;
   text-align: center;
   margin-right: 50px;
   margin-left: 50px;
+  margin-bottom: 60px;
 }
 
 .lightBox {
@@ -69,21 +97,86 @@
 .lightboxWrapper {
   display: none;
   flex-direction: row;
-  width: 95%;
-  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  margin-top: -19px;
+  margin-right: -8px;
+  margin-left: -8px;
+  background: rgba(228, 228, 228, 0.6);
 }
-.lightboxWrapper .lightboxContent {
+
+.lightboxContent {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  width: 1280px;
+  height: 720px;
+  left: 205px;
+  background: #231f20;
+  background: linear-gradient(153deg, #231f20 31%, rgba(228, 228, 228, 0) 100%);
+}
+.lightboxContent .boxContent {
+  margin-top: -300px;
+  margin-left: 20px;
   font-family: "Code", "Arial", "Helvetica", sans-serif;
-  color: #332020;
+  color: white;
 }
-.lightboxWrapper .lightboxContent h1 {
+.lightboxContent i {
+  position: absolute;
+  left: 1240px;
+  top: 20px;
+}
+.lightboxContent h1 {
   letter-spacing: 1.2px;
+  margin-bottom: 20px;
 }
-.lightboxWrapper .lightboxContent p {
+.lightboxContent p {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin-bottom: 20px;
   font-family: "Gotham", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
+}
+
+.innerContent {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  text-align: left;
+}
+.innerContent .row {
+  display: flex;
+  flex-direction: row;
+}
+.innerContent .contentCard {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  height: 55px;
+  margin: 20px;
+}
+.innerContent .contentCard p {
+  width: 100%;
+  text-align: center;
+  color: #231f20;
+  font-family: "Gotham", "Arial", "Helvetica", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+.innerContent .contentCard h3 {
+  margin-top: 5px;
+  color: #231f20;
+  font-family: "Code", "Arial", "Helvetica", sans-serif;
+  font-weight: 500;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.videoBox {
+  margin: 0 auto;
 }
 
 .fakeNav a:hover {

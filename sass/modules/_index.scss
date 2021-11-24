@@ -8,6 +8,7 @@
     font-weight: bold;
     color: #231f20;
     margin-top: 40px;
+    margin-bottom: 40px;
     letter-spacing: 2px;
     margin-left: 100px;
 }
@@ -20,6 +21,34 @@ margin: 0 auto;
 justify-content: center;
 }
 
+.plsWork:hover {
+    cursor: pointer;
+}
+.models {
+    h3{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    opacity: 0;
+    font-family: 'Integral CF', 'Arial', 'Helvetica', sans-serif;
+    top: 667px;
+    margin-left: 10px;
+    color: #231f20;
+    }
+
+}
+
+.models:hover {
+    h3{
+    opacity: 1;
+    transition: ease-in-out 100ms;
+}
+.models_image img{
+    -webkit-box-shadow: 5px 5px 4px 5px #231f20; 
+    box-shadow: 5px 5px 4px 5px #231f20;transform: scale(1.03);
+    transition: ease-in-out 300ms;
+}
+}
 
 .models{
     display: flex;
@@ -27,4 +56,5 @@ justify-content: center;
     text-align: center;
     margin-right: 50px;
     margin-left: 50px;
+    margin-bottom: 60px;
 }

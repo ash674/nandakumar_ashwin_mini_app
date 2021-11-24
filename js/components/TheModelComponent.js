@@ -6,7 +6,7 @@ export default {
     <div class="models_image">
     <img :src='"images/" + model.mini_image_set_1'>
    </div>
-    <div>
+    <div class="mini_car_name">
     <h3 class="model_name">{{ model.mini_name }}</h3>
     </div>
     </div>`,
