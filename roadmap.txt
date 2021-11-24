@@ -1,0 +1,61 @@
+1. Files and folder to be created:
+       · index.php
+       · header.php (optional - with header in it)
+       · includes directory with -
+            · connect.php with the connection statement to database
+            · functions.php with sql query to retrieve one or more data
+            · index.php that packages the retrieved data
+       · Js directory with - 
+            · main.js with import statement to all the components, Vue instance to display the retrieved data
+            · TheDataMiner.js to store the retrieved back end data
+            · TheModelComponent.js that has the vue component to display the primary 4 mini model cars
+            · TheLightBoxComponent.js that displays the content of mini cars
+            · TheVideoComponent.js that contains the component to display the video commercial
+       · Sass directory with-
+             · main.scss file with import statement to all the sass files inside modules folder
+             · _index.scss, _lightbox.scss, _header.scss, _animation.scss inside modules folder 
+       · Css folder (to watch sass changes)
+       · Images folder with collected mini cooper images and video commercial
+       
+
+index.php -
+1. Html template with link to css/main.css and js/main.js files 
+2. include statement to include header.php
+3. main tag with id app for the vue instance to be mounted 
+4. components name in the main tag to display the main 4 images and lightbox content
+5. Give all the tags class names or id names for styling
+
+header.php -
+1. header content with main image inside header tag
+
+main.js-
+1. Import statement from TheDataMiner.js, TheModelComponent.js, TheLightBoxComponent.js
+2. declare an array, and visible component for the lightbox
+3. Create a new vue instance and store the imported data inside an array
+4. Create functions inside methods to open and close lightbox using the visible property
+5. Name the components to be used in index page
+
+
+TheLightBoxComponent.js -
+1. Create a new component with section tag that contains the html code to display more contents of mini cars
+2. Export the data
+
+TheModelComponent.js -
+1. Create a new component with div tag that contains the html code to display the primary 4 images
+2. Add an @click attribute to div tag so it opens the lightbox with respective content
+3. Export the data
+
+TheVideoComponent.js -
+1. Create a new component with section tag that contains the html code to play the video commercial of each car
+2. Add an @click attribute to div tag so it opens the lightbox with respective content
+3. Export the data
+
+main.scss -
+1. Import the file _index.scss, _lightbox.scss, _header.scss, _animation.scss in modules folder using import tag
+
+_index.scss -
+1. Style the page to your needs
+2. Watch the changes using sass --watch command to css folder
+
+main.css -
+1. Link the file to index.html

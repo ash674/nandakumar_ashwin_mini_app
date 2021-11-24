@@ -11,21 +11,21 @@ export default {
         <section class="innerContent">
         <section class="row">
             <section class="contentCard">
-            <h3>Price<h3>
+            <h3>Price</h3>
             <p>{{ model.mini_price }}</p>
             </section>
             <section class="contentCard">
-            <h3>Engine<h3>
+            <h3>Engine</h3>
             <p>{{ model.mini_engine }}</p>
             </section>
         </section>  
         <section class="row">
             <section class="contentCard">
-            <h3>Power<h3>
+            <h3>Power</h3>
             <p>{{ model.mini_power }}</p>
             </section>
             <section class="contentCard">
-            <h3>Torque<h3>
+            <h3>Torque</h3>
             <p>{{ model.mini_torque }}</p>
             </section>
         </section>
